@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B574ACD1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F774ACD1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:layout_marginTop="20dp"
+            android:background="#F774ACD1"
+            android:contentDescription="@string/DescriptionLogo"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            app:srcCompat="@drawable/online_voting" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="423dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/avatar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/avatar1"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:src="@drawable/imagen1" />
+
+                <TextView
+                    android:id="@+id/candidate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/avatar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/avatar2"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/imagen2" />
+
+                <TextView
+                    android:id="@+id/candidate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/avatar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/avatar3"
+                    android:src="@drawable/imagen3" />
+
+                <TextView
+                    android:id="@+id/candidate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/count3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn"
+            android:textColor="#000000"
+            app:backgroundTint="#74676666" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

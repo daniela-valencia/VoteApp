@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Vote App</string>
+    <string name="DescriptionLogo">Vote Online</string>
+    <string name="avatar1"># 1</string>
+    <string name="avatar2"># 2</string>
+    <string name="avatar3"># 3</string>
+    <string name="btn"> GO TO VOTE </string>
+
+    <string name="header"> VOTE PLEASE </string>
+    <string name="l_name"> Name: </string>
+    <string name="l_id"> ID: </string>
+    <string name="i_name"> Write your name </string>
+    <string name="i_id"> Write your ID </string>
+    <string-array name="candidates_list">
+        <item>Choose your candidate </item>
+        <item>Candidate 1</item>
+        <item>Candidate 2</item>
+        <item>Candidate 3</item>
+    </string-array>
+
+    <string name="btn2"> ACCEPT </string>
+    <string name="btn2off"> REFUSE </string>
+
+    <string name="btn3"> VOTE </string>
+    <string name="message"> Your vote is for  </string>
+    <string name="error_msg">  </string>
+
+
+</resources>

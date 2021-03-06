@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:onClick="chooseCandidate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F774ACD1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="match_parent"
+            android:layout_height="197dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/DescriptionLogo"
+            app:srcCompat="@drawable/online_voting" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/header"
+            android:textSize="30sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/l_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/l_name" />
+
+                <EditText
+                    android:id="@+id/i_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="@string/i_name"
+                    android:inputType="textPersonName"
+                    android:importantForAutofill="no"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/l_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/l_id" />
+
+                <EditText
+                    android:id="@+id/i_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/i_id"
+                    android:inputType="textPersonName"
+                    android:importantForAutofill="no"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Spinner
+            android:id="@+id/candidate_list"
+            android:layout_width="359dp"
+            android:layout_height="35dp"
+            android:entries="@array/candidates_list"
+            android:hapticFeedbackEnabled="false"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:text="@string/message"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/btn2"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:background="#74676666"
+                android:checked="false"
+                android:onClick="chooseCandidate"
+                android:textOff="@string/btn2"
+                android:textOn="@string/btn2off" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:onClick="vote"
+                android:text="@string/btn3"
+                android:textColor="#040404"
+                app:backgroundTint="#74676666" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/err_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/error_msg" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
